@@ -5,21 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Justin &amp; Aiswarya | 31st December 2026</title>
 <meta name="description" content="Together with our families, Justin and Aiswarya invite you to their wedding on 31st December 2026 at Marth Mariam Syro Malabar Church, Cheppumpara.">
+<link rel="canonical" href="https://justin-aiswarya.vercel.app/">
+<link rel="image_src" href="https://justin-aiswarya.vercel.app/og.jpg">
 
-<!-- Open Graph / WhatsApp / Facebook / Social Sharing -->
+<!-- Open Graph / WhatsApp / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://justin-aiswarya.vercel.app/">
 <meta property="og:site_name" content="Justin &amp; Aiswarya Wedding">
 <meta property="og:title" content="Justin &amp; Aiswarya — Wedding Invitation">
-<meta property="og:description" content="31st December 2026 · Marth Mariam Syro Malabar Church, Cheppumpara. And the two shall become one flesh — Ephesians 5:31">
-<meta property="og:url" content="https://justin-aiswarya.vercel.app/">
-<meta property="og:type" content="website">
+<meta property="og:description" content="Together with our families, Justin and Aiswarya invite you to their wedding on 31st December 2026 at Marth Mariam Syro Malabar Church, Cheppumpara.">
 <meta property="og:image" content="https://justin-aiswarya.vercel.app/og.jpg">
 <meta property="og:image:secure_url" content="https://justin-aiswarya.vercel.app/og.jpg">
 <meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Justin &amp; Aiswarya Wedding Invitation">
 
-<!-- Twitter Cards -->
+<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://justin-aiswarya.vercel.app/">
 <meta name="twitter:title" content="Justin &amp; Aiswarya — Wedding Invitation">
-<meta name="twitter:description" content="31st December 2026 · Marth Mariam Syro Malabar Church, Cheppumpara.">
+<meta name="twitter:description" content="Together with our families, Justin and Aiswarya invite you to their wedding on 31st December 2026 at Marth Mariam Syro Malabar Church, Cheppumpara.">
 <meta name="twitter:image" content="https://justin-aiswarya.vercel.app/og.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -231,6 +237,15 @@
   .card-row .ic{ font-size:17px; margin-top:2px; }
   .card-row .t1{ font-family:'Playfair Display', serif; font-size:18px; color:var(--ink); }
   .card-row .t2{ font-style:italic; color: var(--ink-soft); font-size:15.5px; }
+  .card-row .loc-link{ color: inherit; text-decoration: none; transition: color .2s ease; }
+  .card-row .loc-link:hover{ color: var(--rosewood); text-decoration: underline; }
+  .card-loc-btn{
+    display: inline-flex; align-items: center; gap: 4px; margin-top: 8px;
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--rosewood); text-decoration: none; font-family: 'EB Garamond', serif;
+    border-bottom: 1px solid var(--gold); padding-bottom: 2px; transition: all .2s ease;
+  }
+  .card-loc-btn:hover{ color: var(--gold); border-color: var(--rosewood); }
 
   /* VENUE */
   .venue{ text-align:center; background: var(--cream); }
@@ -253,6 +268,174 @@
     text-transform:uppercase; font-size:12px; font-family:'EB Garamond', serif; transition: all .25s ease;
   }
   .venue-btn:hover{ background: var(--rosewood); color:#fff; border-color:var(--rosewood); }
+
+  /* GALLERY */
+  .gallery-section{
+    text-align: center;
+    background: var(--cream-deep);
+    padding: 80px 24px;
+    border-top: 1px solid var(--divider);
+  }
+  .gallery-section h2{
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 52px;
+    margin-top: 6px;
+    color: var(--rosewood);
+  }
+  .gallery-subtitle{
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 18px;
+    margin: 8px auto 38px;
+    max-width: 480px;
+  }
+  .gallery-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .gallery-item{
+    background: #FFFCF8;
+    border: 1px solid var(--divider);
+    padding: 16px 16px 22px;
+    border-radius: 2px;
+    box-shadow: 0 18px 40px -20px rgba(74,32,24,0.3);
+    transition: transform .32s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow .32s ease;
+    max-width: 360px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .gallery-item:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 24px 50px -18px rgba(74,32,24,0.42);
+  }
+  .gallery-frame{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(195,154,62,0.4);
+    background: #fdfbf7;
+    padding: 8px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.03);
+  }
+  .gallery-img{
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: contain;
+    display: block;
+    border-radius: 1px;
+    transition: transform .4s ease;
+  }
+  .gallery-item:hover .gallery-img{
+    transform: scale(1.02);
+  }
+  .gallery-overlay{
+    position: absolute;
+    inset: 8px;
+    background: rgba(43, 19, 16, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+  .gallery-item:hover .gallery-overlay{
+    opacity: 1;
+  }
+  .gallery-zoom-badge{
+    background: rgba(255,255,255,0.92);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: 'EB Garamond', serif;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--rosewood);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .gallery-caption{
+    margin-top: 14px;
+    text-align: center;
+  }
+  .gallery-caption-title{
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: var(--rosewood);
+    font-style: italic;
+  }
+  .gallery-caption-sub{
+    display: block;
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 28px;
+    color: var(--gold);
+    margin-top: 2px;
+  }
+
+  /* LIGHTBOX MODAL */
+  #gallery-modal{
+    position: fixed; inset: 0; z-index: 10000;
+    background: rgba(26, 10, 7, 0.88);
+    backdrop-filter: blur(8px);
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, visibility .3s ease;
+  }
+  #gallery-modal.show{
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal-dialog{
+    position: relative;
+    max-width: 92vw;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-img{
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border: 3px solid var(--gold-soft);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    border-radius: 2px;
+    background: #000;
+  }
+  .modal-caption{
+    margin-top: 14px;
+    color: #F3E4C9;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 19px;
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+  .modal-close{
+    position: absolute;
+    top: -46px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #F3E4C9;
+    font-size: 34px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 10px;
+    transition: color .2s;
+  }
+  .modal-close:hover{
+    color: var(--gold);
+  }
 
   /* PHOTO */
   .photo-section{ padding: 0; position:relative; }
@@ -282,6 +465,8 @@
     .card{ width: 100%; max-width: 340px; }
     .couple-row{ gap: 20px; }
     .amp{ display:none; }
+    .gallery-item{ max-width: 320px; }
+    .modal-close{ top: -40px; font-size: 28px; }
   }
 
   /* ---- Mute / Unmute button ---- */
@@ -484,21 +669,21 @@
         <div class="tag">Betrothal</div>
         <h3>Engagement</h3>
         <div class="card-row"><span class="ic">📅</span><div><div class="t1">28th December 2026 — Monday</div><div class="t2">11:30 AM</div></div></div>
-        <div class="card-row"><span class="ic">📍</span><div><div class="t1">Mechery House</div><div class="t2">South Vellarappilly P.O., Thekkumbhagom, Thrikkanikkavu</div></div></div>
+        <div class="card-row"><span class="ic">📍</span><div><div class="t1"><a href="https://share.google/mZLqMHbHPWe8HUsf5" target="_blank" rel="noopener" class="loc-link">St Joseph's Syro Malabar Church</a></div><div class="t2">South Vellarappilly, Thekkumbhagam</div><a href="https://share.google/mZLqMHbHPWe8HUsf5" target="_blank" rel="noopener" class="card-loc-btn">📍 Open Location</a></div></div>
       </div>
 
       <div class="card">
         <div class="tag">Holy Matrimony</div>
         <h3>Wedding</h3>
         <div class="card-row"><span class="ic">📅</span><div><div class="t1">31st December 2026 — Thursday</div><div class="t2">11:00 AM</div></div></div>
-        <div class="card-row"><span class="ic">📍</span><div><div class="t1">Marth Mariam Syro Malabar Church</div><div class="t2">Cheppumpara</div></div></div>
+        <div class="card-row"><span class="ic">📍</span><div><div class="t1"><a href="https://www.google.com/maps/search/?api=1&query=Marth+Mariam+Syro+Malabar+Church+Cheppumpara" target="_blank" rel="noopener" class="loc-link">Marth Mariam Syro Malabar Church</a></div><div class="t2">Cheppumpara</div><a href="https://www.google.com/maps/search/?api=1&query=Marth+Mariam+Syro+Malabar+Church+Cheppumpara" target="_blank" rel="noopener" class="card-loc-btn">📍 Open Location</a></div></div>
       </div>
 
       <div class="card">
         <div class="tag">Join Us After</div>
         <h3>Reception</h3>
         <div class="card-row"><span class="ic">📅</span><div><div class="t1">31st December 2026 — Thursday</div><div class="t2">Following the Wedding Service</div></div></div>
-        <div class="card-row"><span class="ic">📍</span><div><div class="t1">Parish Hall</div><div class="t2">Marth Mariam Church, Cheppumpara</div></div></div>
+        <div class="card-row"><span class="ic">📍</span><div><div class="t1"><a href="https://www.google.com/maps/search/?api=1&query=Marth+Mariam+Syro+Malabar+Church+Cheppumpara" target="_blank" rel="noopener" class="loc-link">Parish Hall</a></div><div class="t2">Marth Mariam Church, Cheppumpara</div><a href="https://www.google.com/maps/search/?api=1&query=Marth+Mariam+Syro+Malabar+Church+Cheppumpara" target="_blank" rel="noopener" class="card-loc-btn">📍 Open Location</a></div></div>
       </div>
     </div>
   </section>
@@ -510,16 +695,48 @@
     <div class="divider"><span class="line"></span><span class="gem"></span><span class="line"></span></div>
 
     <div class="venue-card">
+      <div class="venue-tag">✦ Engagement ✦</div>
+      <div class="venue-name">St Joseph's Syro Malabar Church</div>
+      <div class="venue-addr">South Vellarappilly, Thekkumbhagam, Kerala</div>
+      <a class="venue-map" href="https://share.google/mZLqMHbHPWe8HUsf5" target="_blank" rel="noopener">
+        <img src="engagement map.png" alt="Map to St Joseph's Syro Malabar Church, South Vellarappally">
+      </a>
+      <a class="venue-btn" href="https://share.google/mZLqMHbHPWe8HUsf5" target="_blank" rel="noopener">📍 Open Location</a>
+    </div>
+
+    <div class="venue-card" style="margin-top: 32px;">
       <div class="venue-tag">✦ Wedding &amp; Reception ✦</div>
       <div class="venue-name">Marth Mariam Syro Malabar Church</div>
       <div class="venue-addr">Cheppumpara, Lakkattoor, Kerala</div>
       <a class="venue-map" href="https://www.google.com/maps/search/?api=1&query=Marth+Mariam+Syro+Malabar+Church+Cheppumpara" target="_blank" rel="noopener">
-        <img src="map.png" alt="Map to Marth Mariam Syro Malabar Church, Cheppumpara">
+        <img src="wedding map.png" alt="Map to Marth Mariam Syro Malabar Church, Cheppumpara">
       </a>
       <a class="venue-btn" href="https://www.google.com/maps/search/?api=1&query=Marth+Mariam+Syro+Malabar+Church+Cheppumpara" target="_blank" rel="noopener">📍 Open Location</a>
     </div>
   </section>
 
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="eyebrow">Moments &amp; Memories</div>
+    <h2>Gallery</h2>
+    <div class="divider"><span class="line"></span><span class="gem"></span><span class="line"></span></div>
+    <p class="gallery-subtitle">From childhood smiles to a lifetime together</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" data-src="jus-ais.jpeg" data-caption="Where It All Began · Justin &amp; Aiswarya">
+        <div class="gallery-frame">
+          <img src="jus-ais.jpeg" alt="Justin &amp; Aiswarya - Childhood Memories" class="gallery-img">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-badge">🔍 View Photo</div>
+          </div>
+        </div>
+        <div class="gallery-caption">
+          <span class="gallery-caption-title">Where It All Began</span>
+          <span class="gallery-caption-sub">Justin &amp; Aiswarya</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- CLOSING -->
   <section class="closing">
@@ -574,6 +791,15 @@
 
 </main>
 
+<!-- GALLERY LIGHTBOX MODAL -->
+<div id="gallery-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+  <div class="modal-dialog">
+    <button class="modal-close" id="modal-close" aria-label="Close photo view">&times;</button>
+    <img src="" alt="" class="modal-img" id="modal-img">
+    <div class="modal-caption" id="modal-caption"></div>
+  </div>
+</div>
+
 <script>
   // ---- Opening (letter-unfold) animation ----
   const cover = document.getElementById('cover');
@@ -588,6 +814,49 @@
   }
   document.getElementById('tapToOpen').addEventListener('click', openInvite);
   cover.addEventListener('click', openInvite);
+
+  // ---- Gallery Lightbox ----
+  const galleryModal = document.getElementById('gallery-modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalCaption = document.getElementById('modal-caption');
+  const modalClose = document.getElementById('modal-close');
+
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const src = item.getAttribute('data-src');
+      const caption = item.getAttribute('data-caption');
+      if (modalImg) {
+        modalImg.src = src;
+        modalImg.alt = caption;
+      }
+      if (modalCaption) {
+        modalCaption.innerHTML = caption;
+      }
+      if (galleryModal) {
+        galleryModal.classList.add('show');
+        document.documentElement.classList.add('locked');
+      }
+    });
+  });
+
+  function closeGalleryModal() {
+    if (galleryModal) {
+      galleryModal.classList.remove('show');
+      document.documentElement.classList.remove('locked');
+    }
+  }
+
+  if (modalClose) modalClose.addEventListener('click', closeGalleryModal);
+  if (galleryModal) {
+    galleryModal.addEventListener('click', (e) => {
+      if (e.target === galleryModal) closeGalleryModal();
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && galleryModal && galleryModal.classList.contains('show')) {
+      closeGalleryModal();
+    }
+  });
 
   // ---- Countdown timer ----
   const target = new Date('2026-12-31T11:00:00+05:30').getTime();
