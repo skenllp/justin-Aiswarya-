@@ -34,17 +34,17 @@
 
 <style>
   :root{
-    --cream: #FAF7FC;
-    --cream-deep: #F1E9F7;
-    --lavender: #7E5792;
-    --lavender-soft: #9F7DB7;
+    --cream: #F4FAF5;
+    --cream-deep: #E6F4EA;
+    --green: #3D7A52;
+    --green-soft: #6AAF84;
     --gold: #C39A3E;
     --gold-soft: #DCC07E;
-    --ink: #382542;
-    --ink-soft: #6E5A7A;
-    --maroon-1: #1E1228;
-    --maroon-2: #341F45;
-    --maroon-3: #4A2B60;
+    --ink: #1C3326;
+    --ink-soft: #4A6B57;
+    --maroon-1: #0E1F14;
+    --maroon-2: #1A3324;
+    --maroon-3: #264A34;
     --divider: rgba(195, 154, 62, 0.45);
   }
 
@@ -72,7 +72,7 @@
   }
   .eyebrow.light{ color: var(--gold-soft); }
 
-  h1,h2,h3{ font-family:'Playfair Display', serif; font-weight:500; color: var(--lavender); }
+  h1,h2,h3{ font-family:'Playfair Display', serif; font-weight:500; color: var(--green); }
 
   .divider{
     display:flex; align-items:center; justify-content:center; gap:14px;
@@ -97,7 +97,7 @@
     width:50%; height:100%; position:relative; overflow:hidden;
     background:
       radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.22), transparent 55%),
-      linear-gradient(160deg, #D6C2E8 0%, #BF9DD6 35%, #A77EC2 65%, #966CB3 100%);
+      linear-gradient(160deg, #B8E0C0 0%, #8FCC9E 35%, #5DAF7A 65%, #3D9A60 100%);
     transition: transform 1.15s cubic-bezier(.76,0,.18,1), opacity 1.15s ease;
     display:flex; flex-direction:column; align-items:center;
   }
@@ -170,8 +170,8 @@
     text-align:center; padding-top: 60px; padding-bottom: 60px;
     background:
       radial-gradient(ellipse 60% 40% at 15% 8%, rgba(195,154,62,0.13), transparent 60%),
-      radial-gradient(ellipse 60% 40% at 85% 92%, rgba(126,87,146,0.12), transparent 60%),
-      linear-gradient(rgba(250,247,252,0.74), rgba(250,247,252,0.74)),
+      radial-gradient(ellipse 60% 40% at 85% 92%, rgba(61,122,82,0.12), transparent 60%),
+      linear-gradient(rgba(244,250,245,0.76), rgba(244,250,245,0.76)),
       url('hero-bg.jpg') center/cover no-repeat;
   }
   .hero-cross{ margin-bottom: 20px; }
@@ -182,13 +182,13 @@
   .hero-verse-ref{ letter-spacing:0.3em; text-transform:uppercase; font-size:11px; color:var(--gold); font-style:normal; }
   .hero-names{
     font-family:'Mrs Saint Delafield', cursive; font-size: clamp(52px, 11vw, 92px);
-    color: var(--lavender); line-height:1.05; margin: 26px 0 10px;
+    color: var(--green); line-height:1.05; margin: 26px 0 10px;
   }
   .hero-date{
     letter-spacing: 0.35em; text-transform:uppercase; font-size:13px; color: var(--ink-soft);
     margin-top: 4px;
   }
-  .hero-tag{ margin-top: 22px; font-style:italic; color: var(--lavender-soft); font-size:16px; }
+  .hero-tag{ margin-top: 22px; font-style:italic; color: var(--green-soft); font-size:16px; }
   .scroll-cue{ margin-top: 46px; display:flex; flex-direction:column; align-items:center; gap:8px; }
   .scroll-cue span{ letter-spacing:0.3em; text-transform:uppercase; font-size:10.5px; color:var(--ink-soft); }
   .chev{ width:14px; height:14px; border-right:1.5px solid var(--gold); border-bottom:1.5px solid var(--gold); transform: rotate(45deg); animation: chevDown 1.8s ease-in-out infinite; }
@@ -214,11 +214,11 @@
   /* INVITATION */
   .invite{ text-align:center; background: var(--cream); }
   .invite-lead{ max-width: 560px; margin: 0 auto 40px; font-size: 19px; color: var(--ink); }
-  .invite-lead em{ color: var(--lavender-soft); }
+  .invite-lead em{ color: var(--green-soft); }
   .couple-row{ display:flex; justify-content:center; align-items:flex-start; gap: 48px; max-width: 720px; margin: 0 auto; flex-wrap: wrap; }
   .couple-col{ flex:1; min-width: 240px; }
   .couple-col .role{ letter-spacing:0.3em; text-transform:uppercase; font-size:11px; color:var(--gold); margin-bottom:10px; }
-  .couple-col .name{ font-family:'Playfair Display', serif; font-size: 30px; color: var(--lavender); }
+  .couple-col .name{ font-family:'Playfair Display', serif; font-size: 30px; color: var(--green); }
   .couple-col .parents{ font-style:italic; color: var(--ink-soft); margin-top:8px; font-size:16.5px; line-height:1.5; }
   .amp{ font-family:'Mrs Saint Delafield', cursive; font-size:44px; color: var(--gold); align-self:center; margin-top: 6px; }
   .invite-note{ margin-top: 42px; font-style:italic; color: var(--ink-soft); max-width:520px; margin-left:auto; margin-right:auto; }
@@ -229,7 +229,7 @@
   .cards{ display:flex; gap: 26px; justify-content:center; flex-wrap:wrap; margin-top: 46px; }
   .card{
     background: #FFFFFF; border: 1px solid var(--divider); padding: 38px 34px; width: 320px; text-align:left;
-    box-shadow: 0 18px 40px -24px rgba(45,22,60,0.28);
+    box-shadow: 0 18px 40px -24px rgba(22,50,30,0.28);
   }
   .card .tag{ letter-spacing:0.28em; text-transform:uppercase; font-size:11px; color:var(--gold); }
   .card h3{ font-family:'Mrs Saint Delafield', cursive; font-size:36px; margin: 6px 0 18px; }
@@ -238,17 +238,17 @@
   .card-row .t1{ font-family:'Playfair Display', serif; font-size:18px; color:var(--ink); }
   .card-row .t2{ font-style:italic; color: var(--ink-soft); font-size:15.5px; }
   .card-row .loc-link{ color: inherit; text-decoration: none; transition: color .2s ease; }
-  .card-row .loc-link:hover{ color: var(--lavender); text-decoration: underline; }
+  .card-row .loc-link:hover{ color: var(--green); text-decoration: underline; }
   .card-loc-btn{
     display: inline-flex; align-items: center; gap: 6px; margin-top: 10px;
     font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase;
-    color: var(--lavender); text-decoration: none; font-family: 'EB Garamond', serif;
-    padding: 5px 14px; border: 1px solid var(--lavender-soft); border-radius: 20px;
-    background: rgba(126,87,146,0.06);
+    color: var(--green); text-decoration: none; font-family: 'EB Garamond', serif;
+    padding: 5px 14px; border: 1px solid var(--green-soft); border-radius: 20px;
+    background: rgba(61,122,82,0.07);
     transition: all .25s ease;
   }
   .card-loc-btn:hover{
-    background: var(--lavender); color: #fff; border-color: var(--lavender);
+    background: var(--green); color: #fff; border-color: var(--green);
     transform: translateY(-1px);
   }
 
@@ -277,10 +277,10 @@
     width: 46px; height: 46px; border-radius: 50%;
     background: rgba(255, 255, 255, 0.88);
     border: 1px solid rgba(195,154,62,0.55);
-    color: var(--lavender);
+    color: var(--green);
     display: flex; align-items: center; justify-content: center;
     cursor: pointer;
-    box-shadow: 0 4px 18px -6px rgba(45,22,60,0.32);
+    box-shadow: 0 4px 18px -6px rgba(22,50,30,0.32);
     transition: background .2s ease, transform .15s ease;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
@@ -322,8 +322,8 @@
       <stop offset="100%" stop-color="#8C6A21"/>
     </linearGradient>
     <linearGradient id="crossGradDark" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#7E5792"/>
-      <stop offset="100%" stop-color="#4A2B60"/>
+      <stop offset="0%" stop-color="#3D7A52"/>
+      <stop offset="100%" stop-color="#1A3324"/>
     </linearGradient>
   </defs>
 </svg>
@@ -347,7 +347,7 @@
 
   <div class="cover-center" id="tapToOpen">
     <div class="seal">
-      <!-- Floral Cross: white roses + greenery on lavender background -->
+      <!-- Floral Cross: white roses + greenery on pastel green background -->
       <svg class="cross-icon" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:52px;height:52px;">
         <!-- Cross body -->
         <rect x="19.5" y="4" width="7" height="38" rx="1.8" fill="url(#coverCrossGrad)"/>
